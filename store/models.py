@@ -1,3 +1,4 @@
+from itertools import product
 from django.contrib import admin
 from django.conf import settings
 from django.core.validators import MinValueValidator
@@ -41,6 +42,11 @@ class Product(models.Model):
 
     class Meta:
         ordering = ['title']
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name='images')
+    image = models.ImageField(upload_to='store/images')
 
 
 class Customer(models.Model):
