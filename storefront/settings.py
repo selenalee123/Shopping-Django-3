@@ -196,3 +196,4 @@ CELERY_BEAT_SCHEDULE = {
         'args': ['Hello World'],
     }
 }
+
