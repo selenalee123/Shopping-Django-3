@@ -24,6 +24,7 @@ pytest-watch = "*"
 model-bakery = "*"
 locust = "*"
 django-silk = "*"
+django-redis = "*"
 
 [dev-packages]
 autopep8 = "*"
