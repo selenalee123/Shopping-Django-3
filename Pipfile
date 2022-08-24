@@ -22,6 +22,8 @@ pytest-django = "*"
 pytest = "*"
 pytest-watch = "*"
 model-bakery = "*"
+locust = "*"
+django-silk = "*"
 
 [dev-packages]
 autopep8 = "*"
